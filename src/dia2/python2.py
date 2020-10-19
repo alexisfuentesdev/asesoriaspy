@@ -60,3 +60,13 @@ print("-"*50)
 res = str(entero) # Cast a string o cadena
 print(res*10)
 print(type(res))
+
+print("-"*80)
+
+print(int(3.8)) # Resultado que nos arroja es 3
+print(float(5)) # Resultado que dara es 5.0
+
+print("-"*70)
+
+print(40/60.0)
+
