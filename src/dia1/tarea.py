@@ -10,7 +10,9 @@ def diff(x):
 	return exp(x)*sin(x)+exp(x)*cos(x)-(1/2)
 
 
-def NewRap(f, df, a, tol): #vamos a llamar la función para que realice el método
+# Se pueden obviar la inserción de los parametros "f" y "df"
+
+def NewRap(a, tol): #vamos a llamar la función para que realice el método
     # a = -2
 	if pol(a)/diff(a) < 0:
 
@@ -75,4 +77,5 @@ def NewRap(f, df, a, tol): #vamos a llamar la función para que realice el méto
 		print("No hay raices en el intervalo", "{",a,"}")
 
 # Llamada a la función principal
-NewRap(pol,diff,-2,0.0001)
+# NewRap(pol,diff,-2,0.0001) -> Antes de eliminar pol y diff que no son necesarios dentro de los parametros de la llamada a la función
+NewRap(-2,0.0001)
